@@ -1,0 +1,30 @@
+<h1>Listing photos</h1>
+
+<table>
+  <tr>
+    <th>Photo type</th>
+    <th>Title</th>
+    <th>Taken</th>
+    <th>Description</th>
+    <th>Url</th>
+    <th>Client</th>
+  </tr>
+
+<% for photo in @photos %>
+  <tr>
+    <td><%=h photo.photo_type %></td>
+    <td><%=h photo.title %></td>
+    <td><%=h photo.taken %></td>
+    <td><%=h photo.description %></td>
+    <td><%=h photo.url %></td>
+    <td><%=h photo.client %></td>
+    <td><%= link_to 'Show', photo %></td>
+    <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+    <td><%= link_to 'Destroy', photo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New photo', new_photo_path %>

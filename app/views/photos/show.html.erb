@@ -1,0 +1,33 @@
+<p>
+  <b>Photo type:</b>
+  <%=h @photo.photo_type %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @photo.title %>
+</p>
+
+<p>
+  <b>Taken:</b>
+  <%=h @photo.taken %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @photo.description %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @photo.url %>
+</p>
+
+<p>
+  <b>Client:</b>
+  <%=h @photo.client %>
+</p>
+
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Untitled Document</title>
+	</head>
+	<body>
+		<% for photo in @photos %>
+			<li>
+
+						<a class="thumb" href=<%=h photo.url %> title="Title #2">
+								<!-- need to add small field also -->
+								<img src="http://farm3.static.flickr.com/2093/2538168854_f75e408156_s.jpg" alt="Title #2" />
+							</a>
+						<div class="caption">
+							<div class="image-title">Title: <%=h photo.title %></div>
+							<div class="image-desc">
+								<strong>Date: <%=h photo.taken %></strong>
+								<div style="clear: both;"></div>
+							</div>
+						</div>
+					</li>
+		<% end %>
+	
+	
+		 <tr>
+		    <td><%=h photo.photo_type %></td>
+		    <td><%=h photo.title %></td>
+		    <td><%=h photo.taken %></td>
+		    <td><%=h photo.description %></td>
+		    <td><%=h photo.url %></td>
+		    <td><%=h photo.client %></td>
+		  </tr>
+		  
+	</body>
+</html>
