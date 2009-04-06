@@ -12,11 +12,12 @@
 ActiveRecord::Schema.define(:version => 20090328183357) do
 
   create_table "photos", :force => true do |t|
-    t.string   "url"
+    t.string   "photo_type"
     t.string   "title"
-    t.date     "date_taken"
-    t.string   "client"
+    t.date     "taken"
     t.string   "description"
+    t.string   "url"
+    t.string   "client"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

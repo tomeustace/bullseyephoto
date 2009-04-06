@@ -1,0 +1,51 @@
+#product {
+	 background: url('http://farm4.static.flickr.com/3150/2538167224_0a6075dd18.jpg');
+	 height: 320px;
+}
+#product_text, #fashion_text, #event_text {
+	background-color: #000000;
+	display: none;
+	position: absolute;
+	bottom: 0;
+	font-size: 12px;
+	width: 320px; 
+	color: #fff;
+}
+#product_text p, #fashion_text p, #event_text p {
+	margin: 5px;
+}
+#fashion {
+	 background: url('http://farm4.static.flickr.com/3261/2538183196_8baf9a8015.jpg');
+	 height: 320px;
+}
+#event {
+	 background: url('http://farm3.static.flickr.com/2093/2538168854_f75e408156.jpg');
+	 
+	 height: 320px;
+}
+#product_link, #event_link, #fashion_link {
+	text-align:center;
+	background-color:#000000;
+	font-family: georgia,serif;
+	color: #ffffff;
+	font-size: 38px;
+	text-decoration: none;
+	letter-spacing: 12pt;
+}
+#product_link:hover, #event_link:hover, #fashion_link:hover {
+	background-color: #ffffff;
+	border: solid 1px #000000;
+	color: #333333;
+}
+#links {
+	background-color: #000000;
+	margin: 0px;
+	padding: 0px;
+	color: #ffffff;
+}
+/* override base.css */
+.c33l, .c33r { 
+	width: 33.333%;
+	text-align:center;
+	background-color: #000000;
+ }

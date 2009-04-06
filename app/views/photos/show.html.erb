@@ -1,33 +1,33 @@
 <p>
   <b>Photo type:</b>
-  <%=h @photo.photo_type %>
+  <%=h @photos.photo_type %>
 </p>
 
 <p>
   <b>Title:</b>
-  <%=h @photo.title %>
+  <%=h @photos.title %>
 </p>
 
 <p>
   <b>Taken:</b>
-  <%=h @photo.taken %>
+  <%=h @photos.taken %>
 </p>
 
 <p>
   <b>Description:</b>
-  <%=h @photo.description %>
+  <%=h @photos.description %>
 </p>
 
 <p>
   <b>Url:</b>
-  <%=h @photo.url %>
+  <%=h @photos.url %>
 </p>
 
 <p>
   <b>Client:</b>
-  <%=h @photo.client %>
+  <%=h @photos.client %>
 </p>
 
 
-<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Edit', edit_photo_path(@photos) %> |
 <%= link_to 'Back', photos_path %>
